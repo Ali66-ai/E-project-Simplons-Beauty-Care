@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    
+    <!-- SweetAlert2 for Modern Alerts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <script src="Assets/Javascript/cart.js" defer></script>
+    <link rel="stylesheet" href="Assets/CSS/cart_css.css">
+    <link rel="stylesheet" href="Assets/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+        <!-- Google Fonts links -->
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   
+</head>
+<body>
+ 
+        <!-- Navbar-start -->
+        <div class="container-fluid">
+            <div class="row" id="Header"></div>
+        </div>
+        <!-- Navbar-Ends -->
+
+    <div class="container">
+        <h2>Shopping Cart 🛒</h2>
+        <div class="cart-items-container">
+            <div id="cart-items">
+                <p style="text-align:center;">Loading your cart...</p>
+            </div>
+        </div>
+        <p class="total-price">Total: <span id="total-price">0</span></p>
+        <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+    </div>
+
+    <!-- footer Starts -->
+    <div class="container-fluid">
+        <div class="row" id="footer"></div>
+      </div>
+        <!-- footer-Ends -->
+        <script src="Assets/Javascript/bootstrap.bundle.min.js"></script>
+
+    <script src="Assets/Javascript/navbar.js" async></script>
+    <script src="Assets/Javascript/footer.js" async></script>
+</body>
+</html>

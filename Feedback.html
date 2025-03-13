@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="shortcut icon" href="Assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Assets/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/CSS/Feedback.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts links -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navbar-start -->
+    <div class="container-fluid">
+        <div class="row" id="Header"></div>
+    </div>
+    <!-- Navbar-Ends -->
+     <section></section>
+    <div class="container">
+        <form class="feedback-form">
+            <h1>Give your feedback</h1>
+            <div class="id">
+                <input type="text" name="full_name" placeholder="Full Name" required>
+                <i class="far fa-user"></i>
+            </div>
+            <div class="id">
+                <input type="email" name="email" placeholder="Email" required>
+                <i class="far fa-envelope"></i>
+            </div>
+            <textarea name="feedback" cols="15" rows="5" placeholder="Enter your feedback here.." required></textarea>
+            <button type="submit" id="submitBtn">Send</button>
+        </form>
+    </div>
+    <!-- footer Starts -->
+    <div class="container-fluid">
+        <div class="row" id="footer"></div>
+    </div>
+    <!-- footer-Ends -->
+
+    <script src="Assets/Javascript/Contact-Us-validation.js"></script> 
+    <script src="Assets/Javascript/bootstrap.bundle.min.js"></script>
+    <script src="Assets/Javascript/navbar.js"></script>
+    <script src="Assets/Javascript/footer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="Assets/Javascript/cart.js"></script>
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent form submission
+            Swal.fire({
+                title: 'Success!',
+                text: 'Your feedback has been submitted.',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            });
+        });
+    </script>
+</body>
+
+</html>

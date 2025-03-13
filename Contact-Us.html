@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="Assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Assets/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/CSS/Contact-Us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts links -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <!-- Navbar-start -->
+    <div class="container-fluid">
+        <div class="row" id="Header"></div>
+    </div>
+    <!-- Navbar-Ends -->
+
+    <div class="container">
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-md-6 contact-container">
+                <form id="contactForm" class="contact-left">
+                    <div class="contact-left-title">
+                        <h2>Get in touch</h2>
+                        <hr>
+                    </div>
+                    <input type="text" name="name" class="contact-inputs" placeholder="Your Name" required>
+                    <input type="email" name="email" class="contact-inputs" placeholder="Your Email" required>
+                    <textarea name="message" class="contact-inputs" placeholder="Your Message" required></textarea>
+                    <button type="submit">Submit <img src="Assets/Images/arrow_icon.png" alt=""></button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div class="contact-right">
+                    <img src="Assets/Images/right_img.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Shop Locations and Map -->
+        <div class="row">
+            <!-- Shop Locations Column -->
+            <div class="col-md-6 shop-locations">
+                <h3>Shop Locations</h3>
+                <ul class="shop-list">
+                    <li><strong>Centaurus Mall, Islamabad:</strong> Outfitters, Noor’s, Toyland</li>
+                    <li><strong>LuckyOne Mall, Karachi:</strong> Bachaa Party, Jafferjees, Bonanza Satrangi</li>
+                    <li><strong>Emporium Mall, Lahore:</strong> Sapphire, Levi's, Gul Ahmed</li>
+                </ul>
+            </div>
+
+            <!-- Google Map Column -->
+            <div class="col-md-6 map-container">
+                <h3>Find Us on Google Maps</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.294761546462!2d73.0463644753569!3d33.69385297269253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfc0c5a3e7cbbd%3A0xc25b86f842567f93!2sThe%20Centaurus%20Mall!5e0!3m2!1sen!2s!4v1708123456789"
+                    allowfullscreen="">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Starts -->
+    <div class="container-fluid">
+        <div class="row" id="footer"></div>
+    </div>
+    <!-- Footer Ends -->
+
+    <script src="Assets/Javascript/Contact-Us-validation.js"></script>
+    <script src="Assets/Javascript/bootstrap.bundle.min.js"></script>
+    <script src="Assets/Javascript/navbar.js"></script>
+    <script src="Assets/Javascript/footer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="Assets/Javascript/cart.js"></script>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting
+            Swal.fire({
+                title: 'Success!',
+                text: 'Your form has been submitted.',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            });
+        });
+    </script>
+
+</body>
+</html>
