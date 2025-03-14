@@ -2,7 +2,7 @@ var a = document.getElementById("Header").innerHTML = `
 <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
             <a class="navbar-logo" href="#">
-                <img src="Assets/Images/Logo.png" alt="Logo">
+                <img src="Assets/Images/Logo-nav" alt="Logo">
                 <div class="navbar-text">
                     <span class="navbar-logo-name">SIMPLONS</span>
                     <span class="navbar-logo-name2">Beauty care</span>
